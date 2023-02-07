@@ -1,0 +1,12 @@
+{
+  "start" :   {
+    "text" : "example text",
+    "nodes" : {"zero":"one"},
+    "prompt": "text for prompt: "
+  },
+  "quit" : {
+    "text" : "You have chosen to quit\nPlease confirm",
+    "nodes" : {"y":"really quit","n": "go back to game"},
+    "prompt": "Please confirm to exit y/n: "
+  }
+}
