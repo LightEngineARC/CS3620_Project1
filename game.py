@@ -1,13 +1,19 @@
 import json
 
-file = open("./nodes.json")
-nodes = json.load(file)
+file = open("./nodes.json")  # json is a file!
+nodes = json.load(file)  # load is a function!
+file.close()  # no memory leaks!
 
-playing = True
+playing = True  # to track if the game has been ended
+
+# previous node is in case they don't really want to quit
 previousNode = nodes["start"]
-currentNode = nodes["start"]
-response = ""
-print(len(nodes.keys()))
+currentNode = nodes["start"]  # set the start node
+
+response = ""  # for storing responses. Ultimately not needed out of the playing loop
+# for counting the nodes
+# print(len(nodes.keys()))
+
 # game loop
 while playing:
     # print the text of the node, the narrative/decision
