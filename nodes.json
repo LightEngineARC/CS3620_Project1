@@ -1,12 +1,172 @@
 {
   "start" :   {
-    "text" : "example text",
-    "nodes" : {"zero":"one"},
-    "prompt": "text for prompt: "
+    "text" : "\nHello. I am about to introduce you to the work of Rob Cantor's \"Shia LaBeouf Live.\"\nPlease let your mind see this as if from your own eyes.\nYou can quit at any time by typing QUIT in the terminal.",
+    "list" : {"one":"Verse 1"},
+    "prompt": "Your instructions are to type the all caps word to make your choices, but you can type them in lower case.\nFor example, Type ONE to go to Verse 1: "
   },
   "quit" : {
     "text" : "You have chosen to quit\nPlease confirm",
-    "nodes" : {"y":"really quit","n": "go back to game"},
-    "prompt": "Please confirm to exit y/n: "
+    "list" : {"y":"really quit","n": "go back to game"},
+    "prompt": "\nPlease confirm to exit y/n: "
+  },
+  "one" : {
+    "text" : "You're walking in the woods\nThere's no one around and your phone is dead\nOut of the corner of your eye you spot him\nShia LaBeouf",
+    "list" : {"two":"really quit"},
+    "prompt": "Type TWO: "
+  },
+  "two" : {
+    "text" : "He's following you, about 30 feet back\nHe gets down on all fours and breaks into a sprint\nHe's gaining on you\nShia LaBeouf",
+    "list" : {"car":"look for car","help": "die"},
+    "prompt": "Run for your CAR or find HELP: "
+  },
+  "help" : {
+    "text" : "The last thing you see is the bloody face of Shia LaBeouf",
+    "list" : {"one":"Verse 1"},
+    "prompt": "Go back to verse ONE or QUIT: ",
+    "die": "True"
+  },
+  "car" : {
+    "text" : "You're looking for you car but you're all turned around\nHe's almost upon you now\nAnd you can see there's blood on his face\nMy God, there's blood everywhere!",
+    "list" : {"run":"","fight": "die"},
+    "prompt": "Do you RUN, or FIGHT: "
+  },
+  "fight" : {
+    "text" : "You are overpowered by Shia LaBeouf",
+    "list" : {"one":""},
+    "prompt": "Go back to verse ONE or QUIT: ",
+    "die":"True"
+  },
+  "run" : {
+    "text" : "Running for you life (from Shia LaBeouf)\nHe's brandishing a knife (it's Shia LaBeouf)",
+    "list" : {"cut":"cut"},
+    "prompt": "Don't get CUT: "
+  },
+  "cut" : {
+    "text" : "Lurking in the shadows\nHollywood superstar Shia LaBeouf\nLiving in the woods (Shia LaBeouf)\nKilling for sport (Shia LaBeouf)",
+    "list" : {"look":"look"},
+    "prompt": "You can't help but to LOOK: "
+  },
+  "look" : {
+    "text" : "Eating all the bodies\nActual cannibal Shia LaBeouf",
+    "list" : {"do":"that"},
+    "prompt": "How could you DO that?: "
+  },
+  "do" : {
+    "text" : "Now it's dark, and you seem to have lost him",
+    "list" : {"lost":"him"},
+    "prompt": "LOST: "
+  },
+  "lost" : {
+    "text" : "But you're hopelessly lost yourself\nStranded with a murderer",
+    "list" : {"sneak":"hide"},
+    "prompt": "Do you want to SNEAK or HIDE: "
+  },
+  "hide" : {
+    "text" : "Found! by Actual Cannibal Shia LaBeouf!",
+    "list" : {"one":""},
+    "prompt": "Go back to verse ONE or QUIT: ",
+    "die": "True"
+  },
+  "sneak" : {
+    "text" : "You creep silently through the underbrush\nAha! In the distance",
+    "list" : {"see":""},
+    "prompt": "What did you SEE: "
+  },
+  "see" : {
+    "text" : "A small cottage with a light on\nHope! You move stealthily toward it",
+    "list" : {"safe":"no"},
+    "prompt": "Could you be SAFE: "
+  },
+  "safe" : {
+    "text" : "But your leg! Ah! It's caught in a bear trap!",
+    "list" : {"give":"","undo": "no luck"},
+    "prompt": "UNDO the trap or GIVE it your leg: "
+  },
+  "give" : {
+    "text" : "Gnawing off your leg (quiet, quiet)\nLimping to the cottage (quiet, quiet)\nNow you're on the doorstep",
+    "list" : {"in":"SHIA SURPRISE"},
+    "prompt": "Go IN: "
+  },
+  "undo" : {
+    "text" : "You can't open it, the trap is too strong.",
+    "list" : {"give":"in"},
+    "prompt": "It does not work! You can't GIVE up!"
+  },
+  "in" : {
+    "text" : "Sitting inside\nShia LaBeouf\nSharpening an axe (Shia LaBeouf)",
+    "list" : {"quiet":"quiet"},
+    "prompt": "be QUIET: "
+  },
+  "quiet" : {
+    "text" : "But he doesn't hear you enter (Shia LaBeouf)\nYou're sneaking up behind him",
+    "list" : {"chance":"not quite"},
+    "prompt": "Now is your CHANCE: "
+  },
+  "chance" : {
+    "text" : "Strangling superstar\nShia LaBeouf\nFighting for your life with Shia LaBeouf",
+    "list" : {"strong":"neck"},
+    "prompt": "too STRONG: "
+  },
+  "strong" : {
+    "text" : "Wrestling a knife from Shia LaBeouf",
+    "list" : {"stab":"his kidney"},
+    "prompt": "THROW the knife or STAB Shia: "
+  },
+  "stab" : {
+    "text" : "Stab him in his kidney\nSafe at last from Shia LaBeouf",
+    "list" : {"leave":"the cabin","phone": "911"},
+    "prompt": "You can look for a PHONE or LEAVE: "
+  },
+  "phone" : {
+    "text" : "",
+    "list" : {"":""},
+    "prompt": "LEAVE: "
+  },
+  "leave" : {
+    "text" : "You limp into the dark woods\nBlood oozing from your stump leg\nYou've beaten Shia LaBeouf",
+    "list" : {"night":"woods"},
+    "prompt": "You hear the sounds of the NIGHT in the woods: "
+  },
+  "night" : {
+    "text" : "Wait! He isn't dead (Shia surprise)\nThere's a gun to your head and death in his eyes",
+    "list" : {"surprise":"Shia"},
+    "prompt": "Shia SURPRISE: "
+  },
+  "surprise" : {
+    "text" : "But you can do jiu-jitsu\nBody slam superstar Shia LaBeouf\nLegendary fight with Shia LaBeouf",
+    "list" : {"more":"jiu-jitsu","axe": "HIM"},
+    "prompt": "MORE jiu-jitsu or grab the AXE: "
+  },
+  "more" : {
+    "text" : "Shia counters!",
+    "list" : {"one":""},
+    "prompt": "Verse ONE or QUIT: ",
+    "die": "yet again"
+  },
+  "axe" : {
+    "text" : "Normal Tuesday night for Shia LaBeouf\nYou try to swing an axe at Shia LaBeouf\nBut blood is draining fast from your stump leg",
+    "list" : {"chopping":"chopping","flee": "good luck"},
+    "prompt": "Keep CHOPPING or FLEE: "
+  },
+  "chopping" : {
+    "text" : "He's dodging every swipe, he parries to the left\nYou counter to the right, you catch him in the neck",
+    "list" : {"out":"of control"},
+    "prompt": "The fight is OUT of control: "
+  },
+  "flee" : {
+    "text" : "You're too weak, better keep CHOPPING",
+    "list" : {"chopping":"for real"},
+    "prompt": ""
+  },
+  "out" : {
+    "text" : "You're chopping his head now\nYou have just decapitated Shia LaBeouf",
+    "list" : {"blood":""},
+    "prompt": "Too much BLOOD: "
+  },
+  "blood" : {
+    "text" : "His head topples to the floor, expressionless\nYou fall to your knees and catch your breath\nYou're finally safe from Shia LaBeouf",
+    "list" : {"bob":"cantor"},
+    "prompt": "Credit: Original Video https://www.youtube.com/watch?v=o0u4M6vppCI",
+    "win": "finally"
   }
 }
